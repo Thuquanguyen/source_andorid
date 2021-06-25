@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/extraMargin"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        style="@style/CommonImageView"
+        android:src="@drawable/img_logo_with_text" />
+
+    <TextView
+        style="@style/RegularText"
+        android:layout_marginTop="@dimen/bigMargin"
+        android:text="@string/send_authentication_code"
+        android:visibility="gone" />
+</LinearLayout>

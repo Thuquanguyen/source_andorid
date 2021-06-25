@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+        <checkvn.com.viettiepbhdt.utils.custom.CustomToolbarView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:elevation="@dimen/view_size_8dp"
+            app:ctv_show_icon_search="false"
+            app:ctv_title="@string/menu_list"
+            app:ctv_type="TITLE"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/view_size_88dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/llProtect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_logo_thv"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="-24dp" />
+
+                    <TextView
+                        android:id="@+id/tv_active_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/view_size_24dp"
+                        android:layout_marginTop="-24dp"
+                        android:background="@color/colorTheme"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/view_size_14dp"
+                        android:paddingVertical="@dimen/view_size_8dp"
+                        android:text="@string/you_have_activated_protect"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_15sp" />
+
+                </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vp_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/colorWhite"
+                    android:paddingTop="@dimen/view_size_8dp"
+                    app:layout_constraintDimensionRatio="360:272"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/llProtect" />
+
+                <TextView
+                    android:id="@+id/tv_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_size_16dp"
+                    android:background="@drawable/bg_solid_radius_4dp"
+                    android:paddingHorizontal="@dimen/view_size_14dp"
+                    android:paddingVertical="@dimen/view_size_2dp"
+                    android:textColor="@color/colorGrey"
+                    app:layout_constraintBottom_toBottomOf="@+id/vp_images"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:text="1/3" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:paddingHorizontal="@dimen/view_size_16dp"
+                    android:paddingVertical="@dimen/view_size_8dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/text_size_20sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vp_images"
+                    tools:text="Khóa Điện Tử Việt Tiệp 28286 Vân tay, Mã Số, Chìa cơ" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_count_days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/view_size_12dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_name">
+
+                    <include
+                        layout="@layout/layout_progress_count_days"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/view_size_16dp" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_size_40dp"
+                    android:layout_marginTop="@dimen/view_size_4dp"
+                    android:background="@color/colorWhite"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_count_days"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    app:tabSelectedTextColor="@color/colorPrimary"
+                    app:tabTextColor="@color/colorGrey">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_item_guarantee"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/guarantee" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:id="@+id/tab_item_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/product" />
+
+                    <!--                    <com.google.android.material.tabs.TabItem-->
+                    <!--                        android:id="@+id/tab_item_trademark"-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="match_parent"-->
+                    <!--                        android:text="@string/trademark" />-->
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_guarantee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tab_product">
+
+                    <LinearLayout
+                        android:id="@+id/llAgencyInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/view_size_4dp"
+                        android:background="@color/colorWhite"
+                        android:orientation="vertical"
+                        android:padding="@dimen/view_size_16dp"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/owner_information"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/text_size_16sp"
+                            android:textStyle="bold" />
+
+                        <checkvn.com.viettiepbhdt.utils.custom.CustomItemInfo
+                            android:id="@+id/itemPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_size_12dp"
+                            app:cii_text_info="N/A"
+                            app:cii_text_label="Số điện thoại sở hữu" />
+
+                        <checkvn.com.viettiepbhdt.utils.custom.CustomItemInfo
+                            android:id="@+id/itemAgencyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cii_text_info="N/A"
+                            app:cii_text_label="@string/agency_name" />
+
+                        <checkvn.com.viettiepbhdt.utils.custom.CustomItemInfo
+                            android:id="@+id/itemAgencyAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cii_text_info="N/A"
+                            app:cii_text_label="@string/agency_address_label" />
+
+                        <checkvn.com.viettiepbhdt.utils.custom.CustomItemInfo
+                            android:id="@+id/itemActiveAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cii_text_info="N/A"
+                            app:cii_text_label="@string/activated_address" />
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_warranty_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_size_4dp"
+                        android:background="@color/colorWhite"
+                        android:padding="@dimen/view_size_16dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llAgencyInfo">
+
+                        <TextView
+                            android:id="@+id/tv_warranty_information"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/warranty_information"
+                            android:textColor="@color/colorGray"
+                            android:textSize="@dimen/text_size_16sp"
+                            android:textStyle="bold"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/label_product_code"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_size_12dp"
+                            android:text="@string/product_code_label"
+                            android:textColor="@color/colorGrey"
+                            android:visibility="gone"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_warranty_information"
+                            app:layout_constraintWidth_percent="0.5" />
+
+                        <TextView
+                            android:id="@+id/tv_product_code"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_size_12dp"
+                            android:textColor="@color/colorGrey"
+                            android:visibility="gone"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_warranty_information"
+                            app:layout_constraintWidth_percent="0.5"
+                            tools:text="VA15111992" />
+
+                        <TextView
+                            android:id="@+id/label_warranty_period"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/warranty_period_label"
+                            android:textColor="@color/colorGrey"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/label_product_code"
+                            app:layout_constraintWidth_percent="0.5" />
+
+                        <TextView
+                            android:id="@+id/tv_warranty_period"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGrey"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_product_code"
+                            app:layout_constraintWidth_percent="0.5"
+                            tools:text="5 năm" />
+
+                        <TextView
+                            android:id="@+id/label_warranty_activation_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/warranty_activation_date_label"
+                            android:textColor="@color/colorGrey"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/label_warranty_period"
+                            app:layout_constraintWidth_percent="0.5" />
+
+                        <TextView
+                            android:id="@+id/tv_warranty_activation_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGrey"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_warranty_period"
+                            app:layout_constraintWidth_percent="0.5"
+                            tools:text="11/11/2018" />
+
+                        <TextView
+                            android:id="@+id/label_warranty_expiry_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/warranty_expiry_date_label"
+                            android:textColor="@color/colorGrey"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/label_warranty_activation_date"
+                            app:layout_constraintWidth_percent="0.5" />
+
+                        <TextView
+                            android:id="@+id/tv_warranty_expiry_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGrey"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/label_warranty_activation_date"
+                            app:layout_constraintWidth_percent="0.5"
+                            tools:text="11/11/2023" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_warranty_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_size_4dp"
+                        android:background="@color/colorWhite"
+                        android:padding="@dimen/view_size_16dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cl_warranty_information">
+
+                        <LinearLayout
+                            android:id="@+id/ll_header_warranty_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <TextView
+                                android:id="@+id/tv_warranty_history"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/warranty_history"
+                                android:textColor="@color/colorGray"
+                                android:textSize="@dimen/text_size_16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_add_warranty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/view_size_16dp"
+                                android:background="@drawable/bg_outline_radius_red_16dp"
+                                android:backgroundTint="@color/colorTheme"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/view_size_12dp"
+                                android:paddingVertical="@dimen/view_size_4dp"
+                                app:layout_constraintLeft_toRightOf="@+id/tv_warranty_history"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_add_white_24dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/view_size_4dp"
+                                    android:text="@string/add_history"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/text_size_14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_warranty_history"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/view_size_8dp"
+                            android:clipToPadding="false"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ll_header_warranty_history"
+                            tools:listitem="@layout/item_warranty_history" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_size_70dp"
+                        android:background="@color/white"
+                        app:layout_constraintTop_toBottomOf="@+id/cl_warranty_history" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/view_size_4dp"
+                    android:background="@color/colorWhite"
+                    android:paddingHorizontal="@dimen/view_size_16dp"
+                    android:paddingTop="@dimen/view_size_16dp"
+                    android:paddingBottom="@dimen/view_size_70dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tab_product">
+
+                    <TextView
+                        android:id="@+id/label_product_information"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/product_information"
+                        android:textColor="@color/colorGray"
+                        android:textSize="@dimen/text_size_16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_product_information"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_size_12dp"
+                        android:textColor="@color/colorGrey"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/label_product_information"
+                        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut consectetur eros, in aliquam urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos." />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_trademark"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/view_size_4dp"
+                    android:background="@color/colorWhite"
+                    android:paddingHorizontal="@dimen/view_size_16dp"
+                    android:paddingTop="@dimen/view_size_16dp"
+                    android:paddingBottom="@dimen/view_size_70dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tab_product">
+
+                    <ImageView
+                        android:id="@+id/iv_trademark"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:elevation="@dimen/view_size_8dp"
+                        android:src="@drawable/product_1"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_percent="0.25" />
+
+                    <TextView
+                        android:id="@+id/tv_trademark_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_8dp"
+                        app:layout_constraintLeft_toRightOf="@+id/iv_trademark"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="KHÓA VIỆT - TIỆP" />
+
+                    <TextView
+                        android:id="@+id/tv_trademark_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_8dp"
+                        app:layout_constraintLeft_toRightOf="@+id/iv_trademark"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_trademark_name"
+                        tools:text="@string/trademark_address" />
+
+                    <TextView
+                        android:id="@+id/tv_trademark_hotline"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_8dp"
+                        app:layout_constraintLeft_toRightOf="@+id/iv_trademark"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_trademark_address"
+                        tools:text="@string/trademark_hotline" />
+
+                    <TextView
+                        android:id="@+id/tv_trademark_website"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/view_size_8dp"
+                        app:layout_constraintLeft_toRightOf="@+id/iv_trademark"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_trademark_hotline"
+                        tools:text="@string/trademark_website" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

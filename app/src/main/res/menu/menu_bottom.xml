@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--    <item-->
+    <!--        android:id="@+id/menu_home"-->
+    <!--        android:icon="@drawable/ic_home"-->
+    <!--        android:title="@string/menu_home"-->
+    <!--        app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/menu_list"
+        android:icon="@drawable/ic_list"
+        android:title="@string/menu_list"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_website"
+        android:icon="@drawable/ic_website"
+        android:title="@string/website"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:enabled="false"
+        android:title=""
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_notification"
+        android:icon="@drawable/ic_notification"
+        android:iconTint="@color/colorGrey"
+        android:title="@string/menu_notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_personal"
+        android:icon="@drawable/ic_personal"
+        android:title="@string/menu_personal"
+        app:showAsAction="always" />
+</menu>

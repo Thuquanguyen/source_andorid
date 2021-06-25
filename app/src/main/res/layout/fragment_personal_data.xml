@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editText_background_color"
+    android:orientation="vertical">
+
+    <checkvn.com.viettiepbhdt.utils.custom.CustomToolbarView
+        android:id="@+id/topBar"
+        style="@style/PersonalToolbar"
+        app:ctv_title="@string/profile" />
+
+    <ScrollView
+        style="@style/PersonalScrollView"
+        android:layout_marginBottom="@dimen/imgMargin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/regularMargin"
+                app:cardBackgroundColor="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="@dimen/profile_avatar_height"
+                    android:layout_height="@dimen/profile_avatar_height"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/regularMargin"
+                    android:src="@drawable/img_phone_screen" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <checkvn.com.viettiepbhdt.utils.custom.CustomMenuItem
+                android:id="@+id/btnFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/regularMargin"
+                android:layout_marginEnd="@dimen/regularMargin"
+                app:drawable_end="@drawable/ic_edit"
+                app:end_text_editable="true"
+                app:is_first="true"
+                app:text_end="@string/name"
+                app:text_start="@string/name"
+                app:underline_visible="true" />
+
+            <checkvn.com.viettiepbhdt.utils.custom.CustomMenuItem
+                android:id="@+id/btnPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/regularMargin"
+                android:layout_marginEnd="@dimen/regularMargin"
+                app:drawable_end_visible="false"
+                app:text_start="@string/phone_number"
+                app:underline_visible="true" />
+
+            <!--            <checkvn.com.viettiepbhdt.utils.custom.CustomMenuItem-->
+            <!--                android:id="@+id/btnEmail"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="@dimen/regularMargin"-->
+            <!--                android:layout_marginEnd="@dimen/regularMargin"-->
+            <!--                app:drawable_end="@drawable/ic_edit"-->
+            <!--                app:end_text_editable="true"-->
+            <!--                app:text_start="@string/email"-->
+            <!--                app:underline_visible="true" />-->
+
+            <checkvn.com.viettiepbhdt.utils.custom.CustomMenuItem
+                android:id="@+id/btnBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/regularMargin"
+                android:layout_marginEnd="@dimen/regularMargin"
+                app:drawable_end="@drawable/ic_edit"
+                app:text_start="@string/date_of_birth"
+                app:underline_visible="true" />
+
+            <checkvn.com.viettiepbhdt.utils.custom.CustomMenuItem
+                android:id="@+id/btnGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/regularMargin"
+                android:layout_marginEnd="@dimen/regularMargin"
+                app:drawable_end="@drawable/ic_edit"
+                app:is_last="true"
+                app:text_start="@string/gender" />
+
+            <LinearLayout
+                android:id="@+id/llAgencyInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/regularMargin"
+                android:layout_marginTop="@dimen/regularMargin"
+                android:layout_marginEnd="@dimen/regularMargin"
+                android:orientation="vertical">
+
+                <checkvn.com.viettiepbhdt.utils.custom.CustomMenuItem
+                    android:id="@+id/btnAgencyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:drawable_end_visible="false"
+                    app:is_first="true"
+                    app:text_start="@string/agency_name"
+                    app:underline_visible="true" />
+
+                <checkvn.com.viettiepbhdt.utils.custom.CustomMenuItem
+                    android:id="@+id/btnAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:drawable_end_visible="false"
+                    app:is_last="true"
+                    app:text_start="@string/address" />
+
+            </LinearLayout>
+
+            <checkvn.com.viettiepbhdt.utils.custom.CustomMenuItem
+                android:id="@+id/btnChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/regularMargin"
+                app:drawable_end="@drawable/ic_right_arrow"
+                app:is_last="true"
+                app:text_start="@string/change_password" />
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/CommonButton"
+                android:layout_margin="@dimen/regularMargin"
+                android:text="@string/save_change" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

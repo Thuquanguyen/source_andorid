@@ -1,0 +1,80 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/view_size_16dp"
+    android:paddingTop="@dimen/view_size_16dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/iv_trademark"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="@dimen/view_size_8dp"
+        android:src="@drawable/product_3"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.23" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_size_16dp"
+        android:text="KHÓA VIỆT - TIỆP"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/text_size_15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/iv_trademark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_size_16dp"
+        android:text="@string/trademark_address"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_trademark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_hotline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_size_16dp"
+        android:text="@string/trademark_hotline"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_trademark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_address" />
+
+    <TextView
+        android:id="@+id/tv_website"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_size_16dp"
+        android:text="@string/trademark_website"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_trademark"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hotline" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="@dimen/view_size_12dp"
+        android:background="@color/colorBorder"
+        app:layout_constraintTop_toBottomOf="@+id/tv_website" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Black 54%-->
+    <!--Black 54%-->
+    <!--Black 54% & leading 48dp-->
+    <!--Black 54% & leading 40dp-->
+
+    <!--Black 87% & leading 32dp-->
+    <!--Black 87%-->
+
+    <!--Black 87% & leading 28dp-->
+    <!--Black 87% & leading 24dp-->
+    <!--Black 87% & leading 24dp-->
+    <!--Black 87% & leading 20dp-->
+
+    <!--Black 54%-->
+
+    <!--Text size-->
+    <dimen name="titleSize">24sp</dimen>
+    <dimen name="regularTextSize">13sp</dimen>
+    <dimen name="mediumTextSize">16sp</dimen>
+
+    <!--Margin-->
+    <dimen name="extraSmallMargin">4dp</dimen>
+    <dimen name="smallMargin">8dp</dimen>
+    <dimen name="regularMargin">16dp</dimen>
+    <dimen name="extraMargin">24dp</dimen>
+    <dimen name="bigMargin">32dp</dimen>
+    <dimen name="imgMargin">50dp</dimen>
+
+    <!--Padding-->
+    <dimen name="smallPadding">8dp</dimen>
+    <dimen name="regularPadding">16dp</dimen>
+
+    <!--Corner radius-->
+    <dimen name="CommonRadius">5dp</dimen>
+    <dimen name="ExtraRadius">10dp</dimen>
+
+    <!--Button height-->
+    <dimen name="buttonHeightRegular">48dp</dimen>
+
+    <dimen name="view_size_1dp">1dp</dimen>
+    <dimen name="view_size_2dp">2dp</dimen>
+    <dimen name="view_size_4dp">4dp</dimen>
+    <dimen name="view_size_6dp">6dp</dimen>
+    <dimen name="view_size_8dp">8dp</dimen>
+    <dimen name="view_size_10dp">10dp</dimen>
+    <dimen name="view_size_12dp">12dp</dimen>
+    <dimen name="view_size_14dp">14dp</dimen>
+    <dimen name="view_size_16dp">16dp</dimen>
+    <dimen name="view_size_20dp">20dp</dimen>
+    <dimen name="view_size_24dp">24dp</dimen>
+    <dimen name="view_size_32dp">32dp</dimen>
+    <dimen name="view_size_36dp">36dp</dimen>
+    <dimen name="view_size_40dp">40dp</dimen>
+    <dimen name="view_size_44dp">44dp</dimen>
+    <dimen name="view_size_48dp">48dp</dimen>
+    <dimen name="view_size_50dp">50dp</dimen>
+    <dimen name="view_size_56dp">56dp</dimen>
+    <dimen name="view_size_64dp">64dp</dimen>
+    <dimen name="view_size_70dp">70dp</dimen>
+    <dimen name="view_size_88dp">88dp</dimen>
+
+    <dimen name="text_size_10sp">10sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_15sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_48sp">48sp</dimen>
+
+    <dimen name="profile_avatar_height">100dp</dimen>
+    <dimen name="profile_avatar_weight">100dp</dimen>
+
+    <dimen name="right_left_spinner_padding">0dp</dimen>
+    <dimen name="view_size_74dp">74dp</dimen>
+</resources>

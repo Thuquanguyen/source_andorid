@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/regularPadding">
+
+            <ImageView
+                android:id="@+id/drawableStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/regularMargin"
+                android:src="@drawable/ic_music" />
+
+            <TextView
+                android:id="@+id/tvStart"
+                style="@style/TextMenuItem"
+                android:layout_centerVertical="false"
+                android:layout_toRightOf="@id/drawableStart" />
+
+            <View
+                android:id="@+id/underline"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@id/tvStart"
+                android:layout_alignLeft="@id/tvStart"
+                android:alpha="0.4"
+                android:background="@color/colorGrey" />
+
+            <ImageView
+                android:id="@+id/drawableEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.6"
+                android:src="@drawable/ic_edit" />
+
+            <TextView
+                android:id="@+id/tvEnd"
+                style="@style/TextMenuItem"
+                android:layout_centerVertical="false"
+                android:layout_toLeftOf="@id/drawableEnd"
+                android:layout_toRightOf="@+id/tvStart"
+                android:gravity="right" />
+
+            <EditText
+                android:id="@+id/editText"
+                style="@style/EditTextNoBackground"
+                android:layout_toLeftOf="@+id/drawableEnd"
+                android:visibility="gone" />
+
+            <Switch
+                android:id="@+id/switchEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="0dp"
+                android:alpha="1"
+                android:theme="@style/AppTheme"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

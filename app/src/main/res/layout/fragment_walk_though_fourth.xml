@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/regularPadding"
+        tools:context=".presentation.ui.splash.walkThrough.WalkThoughFourthFragment">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/regularMargin"
+            android:src="@drawable/img_phone_screen" />
+
+        <RelativeLayout
+            android:id="@+id/layoutEnterPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/edtPhoneNumber"
+                style="@style/CommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/regularMargin"
+                android:layout_marginTop="@dimen/regularMargin"
+                android:alpha="0.8"
+                android:backgroundTint="@color/colorGrey"
+                android:focusable="true"
+                android:hint="@string/enter_your_phone_number"
+                android:inputType="phone">
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvPhoneMessage"
+                style="@style/TextMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtPhoneNumber"
+                android:layout_alignStart="@id/edtPhoneNumber"
+                android:layout_marginStart="@dimen/extraSmallMargin"
+                android:text="@string/this_phone_number_was_registered" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutEnterOtp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_enter_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/regularMargin"
+                android:text="@string/enter_code_by_sms"
+                android:textAlignment="center"
+                android:textSize="@dimen/regularTextSize" />
+
+            <com.chaos.view.PinView
+                android:id="@+id/edtOtp"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_enter_otp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="@dimen/regularMargin"
+                android:alpha="0.7"
+                android:cursorVisible="true"
+                android:inputType="numberDecimal"
+                android:itemBackground="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cursorWidth="1dp"
+                app:itemCount="6"
+                app:itemHeight="@dimen/view_size_36dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="@dimen/smallMargin"
+                app:itemWidth="@dimen/view_size_36dp"
+                app:lineWidth="1dp"
+                app:viewType="rectangle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtOtp"
+                android:layout_alignStart="@id/edtOtp"
+                android:layout_alignEnd="@id/edtOtp"
+                android:layout_marginBottom="@dimen/regularMargin">
+
+                <TextView
+                    style="@style/TextMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wrong_authentication_code" />
+
+                <TextView
+                    android:id="@+id/tvResendCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/resend_code"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_14sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutCreatePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/regularMargin"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/CommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/regularMargin"
+                android:layout_marginTop="@dimen/regularMargin"
+                android:alpha="0.8"
+                android:backgroundTint="@color/colorGrey"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edtConfirmPassword"
+                style="@style/CommonEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtPassword"
+                android:layout_marginHorizontal="@dimen/regularMargin"
+                android:layout_marginTop="@dimen/smallMargin"
+                android:alpha="0.8"
+                android:backgroundTint="@color/colorGrey"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+
+            <TextView
+                style="@style/TextMessage"
+                android:layout_below="@id/edtConfirmPassword"
+                android:layout_alignStart="@id/edtConfirmPassword"
+                android:layout_marginStart="@dimen/extraSmallMargin"
+                android:layout_marginTop="0dp"
+                android:text="@string/password_is_not_match" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/regularMargin"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextTitle"
+                android:text="@string/link_account_with_phone" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                style="@style/RegularText"
+                android:text="@string/msg_link_account_with_phone" />
+
+            <com.rd.PageIndicatorView
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/regularMargin"
+                android:padding="@dimen/smallPadding"
+                app:piv_animationType="fill"
+                app:piv_count="6"
+                app:piv_dynamicCount="true"
+                app:piv_interactiveAnimation="true"
+                app:piv_padding="3dp"
+                app:piv_radius="4dp"
+                app:piv_select="3"
+                app:piv_selectedColor="@color/colorPrimary"
+                app:piv_strokeWidth="1dp"
+                app:piv_unselectedColor="@color/colorGrey" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/CommonButton"
+                android:text="@string/send_verification_code" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

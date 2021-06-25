@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/view_size_8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thay ổ khóa"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_warranty_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_2dp"
+        android:text="@string/warranty_date"
+        android:textColor="@color/colorGrey" />
+
+    <TextView
+        android:id="@+id/tv_staff_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_2dp"
+        android:text="@string/staff_name"
+        android:textColor="@color/colorGrey" />
+
+    <TextView
+        android:id="@+id/tv_staff_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_2dp"
+        android:text="@string/staff_phone"
+        android:textColor="@color/colorGrey" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_2dp"
+        android:text="@string/warranty_description"
+        android:textColor="@color/colorGrey" />
+
+</LinearLayout>

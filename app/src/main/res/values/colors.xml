@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F58220</color>
+    <color name="colorPrimaryDark">#fff</color>
+    <color name="colorAccent">#F58220</color>
+
+    <color name="textColor">#515C6F</color>
+    <color name="editTextUnderLineColor">#727C8E</color>
+    <color name="editText_background_color">#EFF3F7</color>
+
+    <color name="colorTheme">#F58220</color>
+    <color name="colorRed">#C73130</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrey">#727C8E</color>
+    <color name="colorBackground">#EFF3F7</color>
+    <color name="colorBorder">#B1B1B1</color>
+    <color name="colorText">#838484</color>
+    <color name="colorTextGreen">#37BD10</color>
+    <color name="colorBackgroundGreen">#AEEB9D</color>
+    <color name="colorTextGray">#ABB6BC</color>
+    <color name="colorTextYellow">#E9DE33</color>
+    <color name="colorBackgroundYellow">#F5F2C2</color>
+    <color name="colorTextOrange">#F47737</color>
+    <color name="colorBackgroundOrange">#F4CDB8</color>
+    <color name="colorTextRed">#E10712</color>
+    <color name="colorBackgroundRed">#F9C2C5</color>
+    <color name="colorDivider">#707070</color>
+    <color name="colorTextGrey">#878787</color>
+    <color name="colorGray">#515C6F</color>
+    <color name="progressColor">#A5A4A4</color>
+    <color name="colorTextHint">#808080</color>
+
+    // QrCode
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_laser">#F58220</color>
+    <color name="viewfinder_border">#FFFFFF</color>
+
+    <color name="colorSpinnerHint">#ABB6BC</color>
+    <color name="C73130">#C73130</color>
+</resources>

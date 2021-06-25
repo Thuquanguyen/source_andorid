@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/personalFragment">
+
+    <fragment
+        android:id="@+id/personalFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.personal.PersonalFragment"
+        android:label="PersonalFragment"
+        tools:layout="@layout/fragment_personal">
+        <action
+            android:id="@+id/action_personalFragment_to_brandListFragment"
+            app:destination="@id/brandListFragment" />
+        <action
+            android:id="@+id/action_personalFragment_to_personalDataFragment"
+            app:destination="@id/personalDataFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_right"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpTo="@+id/personalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/brandListFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.personal.BrandListFragment"
+        android:label="fragment_brand_list"
+        tools:layout="@layout/fragment_brand_list" />
+    <fragment
+        android:id="@+id/personalDataFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.personal.PersonalInformationFragment"
+        android:label="fragment_personal_data"
+        tools:layout="@layout/fragment_personal_data">
+        <action
+            android:id="@+id/action_personalDataFragment_to_updatePasswordFragment"
+            app:destination="@id/updatePasswordFragment"
+            app:enterAnim="@anim/enter_from_left"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/updatePasswordFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.personal.ChangePasswordFragment"
+        android:label="ChangePasswordFragment" />
+</navigation>

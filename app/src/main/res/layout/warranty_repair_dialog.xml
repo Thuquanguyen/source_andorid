@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/view_size_20dp"
+    android:paddingVertical="@dimen/view_size_16dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_size_12dp"
+        android:text="@string/add_history"
+        android:textAllCaps="true"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_20dp"
+        android:text="@string/product_error"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_repair_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_product_error" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_12dp"
+        android:text="@string/product_error_description"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regularMargin"
+        android:background="@drawable/background_round_corner_grey"
+        android:gravity="start|top"
+        android:maxLines="10"
+        android:minLines="5"
+        android:padding="@dimen/regularPadding" />
+
+    <LinearLayout
+        android:id="@+id/dialog_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_size_16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_negative_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/view_size_50dp"
+            android:layout_marginRight="@dimen/view_size_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_round_corner_grey"
+            android:gravity="center"
+            android:padding="@dimen/view_size_12dp"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dialog_positive_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/view_size_50dp"
+            android:layout_marginLeft="@dimen/view_size_8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_outline_radius_6dp"
+            android:backgroundTint="@color/colorTheme"
+            android:gravity="center"
+            android:padding="@dimen/view_size_12dp"
+            android:text="@string/add"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_size_16dp">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginHorizontal="@dimen/view_size_16dp"
+        android:background="@color/colorBorder"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="@dimen/view_size_40dp"
+        android:layout_height="@dimen/view_size_40dp"
+        android:layout_marginLeft="@dimen/view_size_16dp"
+        android:layout_marginTop="@dimen/view_size_16dp"
+        android:src="@drawable/ic_verify"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_size_8dp"
+        android:layout_marginTop="@dimen/view_size_16dp"
+        android:text="Gia hạn bảo hành"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/iv_type"
+        app:layout_constraintRight_toLeftOf="@+id/iv_more"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_size_8dp"
+        android:text="20/11/2019"
+        android:textColor="@color/colorGrey"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_type"
+        app:layout_constraintRight_toLeftOf="@+id/iv_more"
+        app:layout_constraintTop_toBottomOf="@+id/tv_type" />
+
+    <ImageView
+        android:id="@+id/iv_more"
+        android:layout_width="@dimen/view_size_24dp"
+        android:layout_height="@dimen/view_size_24dp"
+        android:layout_marginTop="@dimen/view_size_16dp"
+        android:layout_marginRight="@dimen/view_size_8dp"
+        android:padding="@dimen/view_size_4dp"
+        android:src="@drawable/ic_more_vert"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/view_size_16dp"
+        android:layout_marginLeft="@dimen/view_size_8dp"
+        android:layout_marginTop="@dimen/view_size_12dp"
+        android:lineSpacingMultiplier="1.1"
+        android:text="Khóa vân tay Việt Tiệp 28286 vừa được gia hạn bảo hành thêm 1 năm."
+        android:textColor="@color/colorGrey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_type" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

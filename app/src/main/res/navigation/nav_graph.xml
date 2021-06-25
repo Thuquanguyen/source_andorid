@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.splash.walkThrough.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_splashFragmentContainer"
+            app:destination="@id/splashFragmentContainer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/splashFragmentContainer"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.splash.walkThrough.WalkThoughContainerFragment"
+        android:label="fragment_splash_fragment_container"
+        tools:layout="@layout/fragment_splash_fragment_container" />
+
+</navigation>

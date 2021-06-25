@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/regularPadding"
+    tools:context=".presentation.ui.splash.walkThrough.WalkThoughSecondFragment">
+
+    <ImageView
+        style="@style/CommonImageView"
+        android:src="@drawable/img_extend_warranty" />
+
+    <TextView
+        style="@style/TextTitle"
+        android:text="@string/extend_warranty_time" />
+
+    <TextView
+        style="@style/RegularText"
+        android:text="@string/msg_extend_warranty_time" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/regularMargin"
+            android:padding="@dimen/smallPadding"
+            app:piv_animationType="fill"
+            app:piv_count="6"
+            app:piv_dynamicCount="true"
+            app:piv_interactiveAnimation="true"
+            app:piv_padding="3dp"
+            app:piv_radius="4dp"
+            app:piv_select="2"
+            app:piv_selectedColor="@color/colorRed"
+            app:piv_strokeWidth="1dp"
+            app:piv_unselectedColor="@color/colorGrey" />
+
+
+        <Button
+            android:id="@+id/btnContinue"
+            style="@style/CommonButton"
+            android:text="@string/turn_on_location" />
+    </LinearLayout>
+
+</LinearLayout>

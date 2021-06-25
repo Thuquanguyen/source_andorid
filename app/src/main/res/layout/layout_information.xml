@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/view_size_8dp">
+
+        <LinearLayout
+            android:id="@+id/userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_4dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_name"
+                android:maxLines="1"
+                android:paddingVertical="@dimen/view_size_8dp"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/colorTextHint"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_1dp"
+                android:layout_below="@+id/tvSelected"
+                android:alpha="0.4"
+                android:background="@color/colorGrey" />
+
+            <TextView
+                android:id="@+id/tvUserNameError"
+                style="@style/CommonTextError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_error_full_name"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlBirthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_8dp"
+                android:paddingTop="@dimen/view_size_8dp">
+
+                <TextView
+                    android:id="@+id/tvBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_birthday"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorText"
+                    android:textSize="@dimen/text_size_14sp" />
+
+                <View
+                    android:id="@+id/dividerBirthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_size_1dp"
+                    android:layout_below="@+id/tvBirthday"
+                    android:layout_marginTop="@dimen/view_size_8dp"
+                    android:alpha="0.4"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    android:id="@+id/tvBirthdayError"
+                    style="@style/CommonTextError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dividerBirthday"
+                    android:text="@string/ms_error_birthday"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spnGender"
+                style="@style/CommonSmartMaterialSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_8dp"
+                android:paddingTop="@dimen/view_size_8dp"
+                app:smsp_hint="@string/choose_gender" />
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/spnUserType"
+                style="@style/CommonSmartMaterialSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_8dp"
+                android:paddingTop="@dimen/view_size_8dp"
+                app:smsp_hint="@string/choose_user_type" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llEnterAgencyCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edtAgencyCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_8dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/enter_agency_code"
+                android:maxLines="1"
+                android:paddingVertical="@dimen/view_size_8dp"
+                android:textColorHint="@color/colorTextHint"
+                android:textSize="@dimen/text_size_14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_size_1dp"
+                android:layout_below="@+id/tvSelected"
+                android:alpha="0.4"
+                android:background="@color/colorGrey" />
+
+            <TextView
+                android:id="@+id/tvAgencyCodeError"
+                style="@style/CommonTextError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msg_error_agency_code"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llAgencyInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_size_12dp"
+                android:background="@drawable/bg_solid_radius_4dp"
+                android:orientation="vertical"
+                android:padding="@dimen/view_size_8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvAgencyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/text_size_14sp"
+                    android:textStyle="bold"
+                    tools:text="Cửa hàng Kim Khí Đông Anh" />
+
+                <TextView
+                    android:id="@+id/tvAgencyAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_size_4dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="@dimen/text_size_14sp"
+                    tools:text="Địa chỉ: Số 63, đường Cao Lỗ, huyện Đông Anh, Hà Nội" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

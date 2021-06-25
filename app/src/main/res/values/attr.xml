@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomToolbarView">
+        <attr name="ctv_title" format="string" />
+        <attr name="ctv_search_hint" format="string" />
+        <attr name="ctv_show_icon_menu" format="boolean" />
+        <attr name="ctv_show_icon_search" format="boolean" />
+        <attr name="ctv_show_icon_back" format="boolean" />
+        <attr name="ctv_type" format="enum">
+            <enum name="LOGO" value="0" />
+            <enum name="TITLE" value="1" />
+            <enum name="SEARCH_EXPAND" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomMenuItem">
+        <attr name="underline_visible" format="boolean" />
+        <attr name="text_start" format="string" />
+        <attr name="text_end" format="string" />
+        <attr name="drawable_start" format="reference" />
+        <attr name="drawable_end" format="reference" />
+        <attr name="drawable_start_visible" format="boolean" />
+        <attr name="drawable_end_visible" format="boolean" />
+        <attr name="is_first" format="boolean" />
+        <attr name="is_last" format="boolean" />
+        <attr name="switch_end_visible" format="boolean" />
+        <attr name="end_text_editable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomInputField">
+        <attr name="cif_label_visible" format="boolean" />
+        <attr name="cif_input_visible" format="boolean" />
+        <attr name="cif_text_label" format="string" />
+        <attr name="cif_text_input" format="string" />
+        <attr name="cif_hint_input" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomItemInfo">
+        <attr name="cii_label_visible" format="boolean" />
+        <attr name="cii_info_visible" format="boolean" />
+        <attr name="cii_text_label" format="string" />
+        <attr name="cii_text_info" format="string" />
+    </declare-styleable>
+
+</resources>

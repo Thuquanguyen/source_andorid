@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.authentication.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_enterPhoneFragment"
+            app:destination="@id/enterPhoneFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_right"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enterPhoneFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.authentication.EnterPhoneFragment"
+        android:label="EnterPhoneFragment"
+        tools:layout="@layout/fragment_register_phone_number">
+        <action
+            android:id="@+id/action_enterPhoneFragment_to_otpFragment"
+            app:destination="@id/otpFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_right"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.authentication.OtpFragment"
+        android:label="OtpFragment"
+        tools:layout="@layout/fragment_otp">
+        <action
+            android:id="@+id/action_otpFragment_to_createPasswordFragment"
+            app:destination="@id/createPasswordFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_right"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createPasswordFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.authentication.CreatePasswordFragment"
+        android:label="CreatePasswordFragment"
+        tools:layout="@layout/fragment_create_password">>
+        <action
+            android:id="@+id/action_createPasswordFragment_to_enterUserInfoFragment"
+            app:destination="@id/enterUserInfoFragment"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_right"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/enter_from_right"
+            app:popExitAnim="@anim/exit_to_right"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.authentication.ChangePasswordFragment"
+        android:label="ChangePasswordFragment"
+        tools:layout="@layout/fragment_change_password" />
+
+    <fragment
+        android:id="@+id/enterUserInfoFragment"
+        android:name="checkvn.com.viettiepbhdt.presentation.ui.authentication.EnterUserInfoFragment"
+        android:label="EnterUserInfoFragment"
+        tools:layout="@layout/fragment_enter_user_info" />
+</navigation>

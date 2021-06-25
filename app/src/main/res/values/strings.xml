@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name">Khóa\nViệt-Tiệp</string>
+    <string name="facebook_app_id">677956756295322</string>
+    <string name="fb_login_protocol_scheme">fb148828656506550</string>
+    <string name="appID">2747112432070298832</string>
+
+    <string-array name="scan_mode">
+        <item>Âm khi quét</item>
+        <item>Rung khi quét</item>
+    </string-array>
+
+    <string-array name="genders">
+        <item>Nam</item>
+        <item>Nữ</item>
+        <item>Khác</item>
+    </string-array>
+
+    <string-array name="app_language">
+        <item>TIẾNG VIỆT</item>
+        <item>TIẾNG ANH</item>
+    </string-array>
+
+    <string name="hotline">02438832442</string>
+    <string name="no_internet_connection">Kết nối Internet không tìm thấy</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Chào mừng!</string>
+    <string name="discover">Khám phá</string>
+    <string name="discoverApp">Hày đăng ký tài khoản để lưu trữ và quản lý\nbảo hành của bạn một cách an toàn nhất!</string>
+    <string name="this_phone_number_was_registered">Số điện thoại này đã được đăng ký.</string>
+    <string name="this_phone_not_register_yet">Số điện thoại này chưa được đăng ký.</string>
+    <string name="do_you_have_account">Bạn đã có tài khoản?</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="login">Đăng nhập</string>
+
+    <string name="manage_warranty_by_technology">Quản lý bảo hành \n bằng công nghệ</string>
+    <string name="msg_warranty_by_technology">Quét mã QR code hoặc nhập mã bảo hành và bạn sẽ thay thế tất cả thẻ bảo hành của mình bằng một ứng dụng duy nhất.</string>
+    <string name="turn_on_camera">Bật camera</string>
+
+    <string name="tracking_warranty_time">Theo dõi thời hạn \n bảo hành</string>
+    <string name="msg_tracking_warranty_time">Bật thông báo giúp bạn theo dõi thời hạn bảo hành thật dễ dàng.</string>
+    <string name="turn_on_notification">Bật thông báo</string>
+    <string name="extend_warranty_time">Gia hạn bảo hành</string>
+    <string name="msg_extend_warranty_time">Không những thế, bạn sẽ dễ dàng gia hạn bảo hành cho sản phẩm theo các gói hoặc các chính sách từ nhà sản xuất.</string>
+    <string name="msg_continue">Tiếp tục</string>
+    <string name="enter_your_phone_number">Nhập số điện thoại của bạn</string>
+    <string name="enter_phone_number">Nhập số điện thoại</string>
+    <string name="send_verification_code">Gửi mã xác thực</string>
+    <string name="verify">Xác thực</string>
+    <string name="enter_verification_code">Nhập mã xác thực</string>
+    <string name="enter_code_by_sms">Nhập mã xác nhận bạn vừa nhận được \n qua SMS để đặt lại mật khẩu</string>
+    <string name="wrong_authentication_code">Mã không đúng</string>
+    <string name="enter_password">Nhập mật khẩu</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="current_password">Mật khẩu hiện tại</string>
+    <string name="resend_code">Gửi lại mã</string>
+
+    <string name="activate_warranty">Kích hoạt bảo hành</string>
+    <string name="msg_activate_warranty">Kích hoạt bảo hành bằng việc quét mã Qr-code hoặc nhập mã bảo hành sản phẩm. Nên nhớ, bạn cũng có thể kích hoạt giúp người khác.</string>
+    <string name="start">Bắt đầu</string>
+    <string name="link_account_with_phone">Liên kết tài khoản với số điện thoại của bạn</string>
+    <string name="msg_link_account_with_phone">Nhập số điện thoại của bạn để nhận mã số xác thực.</string>
+    <string name="login_by_social_network">Đăng nhập bằng Mạng xã hội</string>
+    <string name="or">Hoặc</string>
+    <string name="password">Mật khẩu</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="enter_phone_number_to_register">Nhập số điện thoại của bạn để \nđăng kí tài khoản mới</string>
+    <string name="enter_phone_number_to_recover">Nhập số điện thoại đã đăng ký tài khoản để đổi mật khẩu</string>
+    <string name="wrong_password">Mật khẩu không đúng</string>
+    <string name="send_authentication_code">Gửi mã xác thực</string>
+    <string name="authentication_code_was_send">Mã xác thực vừa được gửi đến số\nđiện thoại của bạn</string>
+    <string name="invalid_phone_number">Số điện thoại không hợp lệ.</string>
+    <string name="invalid_password">Mật khẩu không hợp lệ.</string>
+    <string name="password_is_not_match">Mật khẩu không trùng khớp</string>
+    <string name="complete">Hoàn thành</string>
+    <string name="authentication">Xác thực</string>
+    <string name="enter_old_password">Nhập mật khẩu cũ</string>
+    <string name="enter_new_password">Nhập mật khẩu mới</string>
+    <string name="password_too_weak">Mật khẩu quá yếu</string>
+    <string name="create_account_success">Tạo tài khoản thành công</string>
+    <string name="change_password_success">Đổi mật khẩu thành công</string>
+
+    <string name="have_no_camera_permission">Camera chưa được cấp quyền</string>
+    <string name="request_camera_permission_success">Đã được cấp quyền Camera</string>
+    <string name="request_notification_permission_success">Đã được cấp quyền thông báo</string>
+    <string name="have_no_location_permission">Chưa được cấp quyền vị trí</string>
+    <string name="request_location_permission_success">Đã được cấp quyền vị trí</string>
+    <string name="error_on_login">Xảy ra lỗi trong quá trình đăng nhập</string>
+    <string name="cancel_on_login">Hủy quá trình đăng nhập</string>
+    <string name="update_profile_success">Cập nhật thông tin thành công</string>
+    <string name="have_error_please_try_again">Đã xảy ra lỗi. Vui lòng thử lại</string>
+
+    <string name="menu_home">Tổng quan</string>
+    <string name="menu_list">Danh sách</string>
+    <string name="menu_notification">Thông báo</string>
+    <string name="menu_personal">Cá nhân</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="menu">menu</string>
+    <string name="about_app">Về Khóa Việt Tiệp</string>
+    <string name="legal_policy">Chính sách pháp lý</string>
+    <string name="frequently_asked_questions">Câu hỏi thường gặp</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="support_hotline">Hotline hỗ trợ</string>
+    <string name="register">Đăng ký</string>
+    <string name="sign_out">Đăng xuất</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="version">Phiên bản 1.00</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="add_product">Thêm sản phẩm</string>
+    <string name="des_in_warranty">Sản phẩm đang trong thời gian kích hoạt bảo hành</string>
+    <string name="des_warranty_expire">Sản phẩm sắp hết thời gian bảo hành</string>
+    <string name="warranty_extension">Gia hạn bảo hành</string>
+    <string name="des_extended_warranty">Sản phẩm đã được gia hạn bảo hành</string>
+    <string name="view_detail">Xem chi tiết</string>
+    <string name="des_expired_warranty">Sản phẩm đã hết hạn bảo hành</string>
+    <string name="save_product">Lưu trữ sản phẩm</string>
+    <string name="validity">Hiệu lực</string>
+    <string name="expiring_soon">Sắp hết hiệu lực</string>
+    <string name="has_extended">Đã gia hạn</string>
+    <string name="sort">Sắp xếp:</string>
+    <string name="sort_title">Sắp xếp</string>
+    <string name="confirm">Đồng ý</string>
+    <string name="cancel">Hủy</string>
+    <string name="guarantee">Bảo hành</string>
+    <string name="trademark">Thương hiệu</string>
+    <string name="product">Sản phẩm</string>
+    <string name="warranty_information">Thông tin bảo hành</string>
+    <string name="product_code_label">Mã sản phẩm:</string>
+    <string name="warranty_period_label">Thời hạn bảo hành:</string>
+    <string name="warranty_activation_date_label">Ngày kích hoạt bảo hành:</string>
+    <string name="warranty_expiry_date_label">Ngày hết hạn bảo hành:</string>
+    <string name="warranty_history">Lịch sử bảo hành</string>
+    <string name="trademark_address">Địa chỉ: %s</string>
+    <string name="trademark_hotline">Hotline: %s</string>
+    <string name="trademark_website">Website: %s</string>
+    <string name="empty_notification">Bạn chưa có thông báo nào!</string>
+    <string name="active_warranty">Kích hoạt bảo hành</string>
+    <string name="active">Kích hoạt</string>
+    <string name="enter_code_manually">Nhập mã thủ công</string>
+    <string name="scan_code_guide">Quét mã QR-Code hoặc nhập mã ký tự trên tem bảo hành để kích hoạt bảo hành</string>
+    <string name="confirm_exit_app">Nhấn BACK lần nữa để thoát</string>
+    <string name="you_have_activated">Bạn vừa kích hoạt bảo hành điện tử cho sản phẩm &#032;</string>
+    <string name="you_have_activated_protect">Bạn vừa kích hoạt bảo hành điện tử cho sản phẩm %s \nSản phẩm được bảo vệ bởi IDE</string>
+    <string name="success">Thành công!</string>
+    <string name="warning">Cảnh báo</string>
+    <string name="error">Lỗi</string>
+    <string name="alert">THÔNG BÁO</string>
+
+    <string name="edit_profile">Chỉnh sửa thông tin cá nhân</string>
+    <string name="history_activate">Lịch sử kích hoạt</string>
+    <string name="sound">Âm thanh</string>
+    <string name="mode_scan">Chế độ quét</string>
+    <string name="vibrate_when_scan">Rung khi quét</string>
+    <string name="customer_feedback">Khách hàng góp ý</string>
+    <string name="feedback">Góp ý</string>
+    <string name="msg_feedback">Ý kiến của bạn là tài nguyên vô cùng quý giá để chúng tôi cải thiện và phát triển sản phẩm. Bạn có góp ý gì với Khóa Việt - Tiệp?\n\n</string>
+    <string name="rate_app">Đánh giá ứng dụng</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="please_grant_camera_permission">Vui lòng cấp quyền truy cập camera để quét mã kích hoạt bảo hành</string>
+    <string name="open_camera">Bật camera</string>
+    <string name="try_again">Thử lại</string>
+    <string name="policy">Chính sách</string>
+    <string name="q_and_a">Q &amp; A</string>
+
+    <string name="name">Tên</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="date_of_birth">Ngày sinh</string>
+    <string name="gender">Giới tính</string>
+    <string name="change_password">Thay đổi mật khẩu</string>
+    <string name="save_change">Lưu thay đổi</string>
+    <string name="saved">Lưu trữ</string>
+    <string name="history">Lịch sử</string>
+    <string name="time_label">Thời gian: %s</string>
+    <string name="account_label">Tài khoản: %s</string>
+    <string name="website">Website</string>
+    <string name="count_day">%d ngày</string>
+    <string name="warranty_month">%d tháng</string>
+    <string name="product_information">Thông tin sản phẩm</string>
+    <string name="send_feedback_success">Gửi góp ý thành công</string>
+    <string name="send_feedback_failure">Gửi góp ý thất bại</string>
+    <string name="please_enter_your_feedback">Vui lòng nhập ý kiến của bạn</string>
+    <string name="please_to_scan_qr_code">Bạn hãy quét mã QR trên sản phẩm để kích hoạt</string>
+    <string name="choose_user_type">Chọn Đối tượng người dùng</string>
+    <string name="enter_name">Nhập Họ tên</string>
+    <string name="enter_birthday">Nhập Ngày sinh</string>
+    <string name="choose_gender">Chọn Giới tính</string>
+    <string name="enter_agency_name">Nhập tên đại lý</string>
+    <string name="enter_agency_phone">Nhập số điện thoại đại lý</string>
+    <string name="choose_province">Chọn Tỉnh/Thành phố</string>
+    <string name="choose_district">Chọn Quận/Huyện</string>
+    <string name="choose_ward">Chọn Phường/Xã</string>
+    <string name="enter_agency_code">Nhập mã đại lý</string>
+    <string name="viet_tiep_fanpage">Fanpage Khóa Việt-Tiệp</string>
+    <string name="viet_tiep_youtube">Kênh video Khóa Việt-Tiệp</string>
+    <string name="owner_info">Thông tin sở hữu sản phẩm</string>
+    <string name="phone_owner">Số điện thoại sở hữu</string>
+    <string name="turn_on_location">Bật vị trí</string>
+    <string name="msg_error_full_name">Vui lòng nhập họ tên</string>
+    <string name="ms_error_birthday">Vui lòng nhập ngày sinh</string>
+    <string name="msg_error_agency_name">Vui lòng nhập tên đại lý</string>
+    <string name="msg_error_phone">Vui lòng nhập số điện thoại</string>
+    <string name="msg_error_agency_code">Vui lòng nhập mã đại lý</string>
+    <string name="msg_error_user_type">Vui lòng chọn đối tượng sử dụng</string>
+    <string name="msg_error_gender">Vui lòng chọn giới tính</string>
+    <string name="register_agency_success">Đăng ký tài khoản đại lý thành công!</string>
+    <string name="register_agency_failure">Đăng ký tài khoản đại lý thất bại!</string>
+    <string name="not_show_again">Không hiển thị hộp thoại này lần sau</string>
+    <string name="active_without_phone_number">Bạn có muốn tiếp tục mà không nhập SĐT Khách hàng sở hữu?</string>
+    <string name="agency_name">Tên đại lý</string>
+    <string name="address">Địa chỉ</string>
+    <string name="agency_address">Địa chỉ: %s</string>
+    <string name="msg_error_province">Vui lòng chọn tỉnh/thành phố</string>
+    <string name="msg_error_district">Vui lòng chọn quận/huyện</string>
+    <string name="msg_error_ward">Vui lòng chọn phường/xã</string>
+    <string name="popup">Hộp thoại</string>
+    <string name="choose_agency">Chọn đại lý</string>
+    <string name="msg_error_choose_agency_name">Vui lòng chọn tên đại lý</string>
+    <string name="active_without_agency">Bạn có muốn tiếp tục mà không nhập tên Đại lý?</string>
+    <string name="owner_information">Thông tin sở hữu</string>
+    <string name="activated_address">Địa điểm kích hoạt</string>
+    <string name="agency_address_label">Địa chỉ đại lý</string>
+    <string name="not_found_agency">Không lấy được thông tin đại lý. Mời bạn kiểm tra lại</string>
+    <string name="enter_verify_code">Nhập mã xác nhận</string>
+    <string name="add_history">Thêm lịch sử</string>
+    <string name="warranty_date">- Ngày bảo hành: %s</string>
+    <string name="staff_name">- Nhân viên bảo hành: %s</string>
+    <string name="staff_phone">- SĐT nhân viên bảo hành: %s</string>
+    <string name="warranty_description">- Mô tả: %s</string>
+    <string name="product_error">Lỗi sản phẩm</string>
+    <string name="hand_cover_error">Lỗi tay ốp</string>
+    <string name="product_error_description">Mô tả lỗi sản phẩm</string>
+    <string name="add">Thêm</string>
+    <string name="msg_error_verify_code">Vui lòng nhập mã xác nhận</string>
+    <string name="msg_error_wrong_verify_code">Bạn đã nhập sai mã xác nhận</string>
+    <string name="add_warranty_repair_success">Thêm lịch sử bảo hành thành công</string>
+    <string name="msg_err_enter_repair_content">Vui lòng nhập mô tả lỗi sản phẩm!</string>
+    <string name="msg_err_choose_repair">Vui lòng chọn lỗi sản phẩm!</string>
+    <string name="search_or_select_agency">Tìm/Chọn đại lý</string>
+    <string name="agency_active">Đại lý kích hoạt</string>
+    <string name="msg_active_for">Nhập số điện thoại sở hữu</string>
+    <string name="delete_account">Xóa tài khoản</string>
+    <string name="confirm_delete_account">Bạn có chắc chắn muốn xóa tài khoản?\nVui lòng nhập mật khẩu hiện tại để tiếp tục</string>
+    <string name="please_enter_your_pass">Vui lòng nhập mật khẩu hiện tại để tiếp tục!</string>
+    <string name="delete_account_success">Xóa tài khoản thành công!</string>
+    <string name="default_notification_channel_id">KVT123</string>
+    <string name="empty_product">Bạn chưa kích hoạt bảo hành!</string>
+
+    <string-array name="user_type">
+        <item name="personal">Người tiêu dùng</item>
+        <item name="agency">Đại lý</item>
+        <item name="warranty_staff">Nhân viên bảo hành</item>
+    </string-array>
+
+    <string-array name="user_gender">
+        <item name="male">Nam</item>
+        <item name="female">Nữ</item>
+    </string-array>
+</resources>

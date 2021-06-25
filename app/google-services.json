@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "541919349966",
+    "firebase_url": "https://khoa-viet-tiep-bhdt.firebaseio.com",
+    "project_id": "khoa-viet-tiep-bhdt",
+    "storage_bucket": "khoa-viet-tiep-bhdt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541919349966:android:d02d081acf59ece41a149f",
+        "android_client_info": {
+          "package_name": "checkvn.com.viettiepbhdt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541919349966-n49mqfe83bjoktsef6e4jhaincumn1lu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "checkvn.com.viettiepbhdt",
+            "certificate_hash": "2a32f1fc40092b0e17eb1ee9d64ad78f2a4c796e"
+          }
+        },
+        {
+          "client_id": "541919349966-odhld9dapl0eeq5dtvgid2dagu20tn47.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "checkvn.com.viettiepbhdt",
+            "certificate_hash": "4e4345fbd0994356c588306fb94627989c5f9151"
+          }
+        },
+        {
+          "client_id": "541919349966-27siumoc0h73dmrglc6pbqnfbrtfn98n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "checkvn.com.viettiepbhdt",
+            "certificate_hash": "d956bc31b33aa181dea2c46836e905bd34867018"
+          }
+        },
+        {
+          "client_id": "541919349966-ojb9varuemmohb3t6hear7bna1ds4glf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrstj_vGMuCebdHWU5vQZP-tzkQ2RyK1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541919349966-ojb9varuemmohb3t6hear7bna1ds4glf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "541919349966-0ot222384h83jfct7ns94udb86c60dgr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.trungtam.ide.khoaviettiep"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
