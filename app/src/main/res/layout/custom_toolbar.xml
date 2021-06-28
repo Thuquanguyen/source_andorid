@@ -36,7 +36,7 @@
         android:layout_marginLeft="@dimen/view_size_8dp"
         android:padding="@dimen/view_size_8dp"
         android:src="@drawable/ic_back"
-        android:tint="@color/colorTheme"
+        android:tint="@color/colorRed"
         android:visibility="gone" />
 
     <TextView
@@ -46,7 +46,7 @@
         android:layout_centerInParent="true"
         android:text="title"
         android:textAllCaps="true"
-        android:textColor="@color/colorTheme"
+        android:textColor="@color/colorRed"
         android:textSize="@dimen/text_size_20sp"
         android:visibility="gone" />
 
@@ -84,7 +84,7 @@
             android:layout_centerVertical="true"
             android:padding="@dimen/view_size_1dp"
             android:src="@drawable/ic_close"
-            android:tint="@color/colorTheme"
+            android:tint="@color/colorRed"
             android:visibility="gone" />
 
     </RelativeLayout>
@@ -97,7 +97,7 @@
         android:layout_marginRight="@dimen/view_size_16dp"
         android:layout_toLeftOf="@+id/iv_menu"
         android:src="@drawable/ic_search"
-        android:tint="@color/colorTheme"
+        android:tint="@color/colorRed"
         android:visibility="visible" />
 
     <ImageView
@@ -108,6 +108,6 @@
         android:layout_centerVertical="true"
         android:layout_marginRight="@dimen/view_size_16dp"
         android:src="@drawable/ic_menu"
-        android:tint="@color/colorTheme" />
+        android:tint="@color/colorRed" />
 
 </RelativeLayout>

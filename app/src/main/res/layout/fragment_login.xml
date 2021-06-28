@@ -16,6 +16,7 @@
         <include layout="@layout/header_authentication" />
 
         <RelativeLayout
+            android:layout_marginTop="@dimen/view_size_50dp"
             android:id="@+id/layoutUserInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,6 +29,7 @@
                 android:id="@+id/edtPhoneNumber"
                 style="@style/CommonEditText"
                 android:layout_marginHorizontal="@dimen/regularMargin"
+                android:textColorHint="@color/ABB6BC"
                 android:hint="@string/enter_phone_number"
                 android:inputType="phone" />
 
@@ -43,6 +45,7 @@
                 android:id="@+id/edtPassword"
                 style="@style/CommonEditText.Password"
                 android:layout_below="@id/edtPhoneNumber"
+                android:textColorHint="@color/ABB6BC"
                 android:layout_marginTop="@dimen/regularMargin"
                 android:hint="@string/enter_password" />
 
@@ -62,14 +65,15 @@
                 android:layout_alignEnd="@id/edtPassword"
                 android:layout_marginEnd="@dimen/extraSmallMargin"
                 android:text="@string/forgot_password"
-                android:textColor="@color/colorPrimary" />
+                android:textSize="13sp"
+                android:textColor="@color/colorRed" />
 
         </RelativeLayout>
 
         <Button
             android:id="@+id/btnLogin"
             style="@style/CommonButton"
-            android:layout_marginTop="@dimen/bigMargin"
+            android:layout_marginTop="@dimen/view_size_50dp"
             android:text="@string/login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/register"
                 android:textAllCaps="true"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/colorRed"
                 android:textSize="@dimen/text_size_14sp"
                 android:textStyle="bold" />
 

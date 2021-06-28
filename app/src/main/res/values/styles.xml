@@ -115,7 +115,7 @@
         <item name="android:visibility">gone</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/colorRed</item>
+        <item name="android:textColor">@color/F7A4A4</item>
     </style>
 
     <style name="CommonProgressBar" parent="Widget.AppCompat.ProgressBar">
@@ -201,4 +201,6 @@
         <item name="android:textSize">@dimen/text_size_12sp</item>
         <item name="android:textColor">@color/colorRed</item>
     </style>
+
+    <color name="F7A4A4">#F7A4A4</color>
 </resources>

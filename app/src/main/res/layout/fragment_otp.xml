@@ -68,7 +68,7 @@
                     android:layout_alignEnd="@id/edtOtp"
                     android:layout_marginEnd="@dimen/extraSmallMargin"
                     android:text="@string/resend_code"
-                    android:textColor="@color/colorPrimary" />
+                    android:textColor="@color/colorRed" />
 
             </RelativeLayout>
 

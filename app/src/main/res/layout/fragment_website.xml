@@ -17,6 +17,7 @@
             app:ctv_show_icon_search="false"
             app:ctv_title="@string/website"
             app:ctv_type="TITLE"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

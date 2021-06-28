@@ -50,7 +50,7 @@
             app:piv_padding="3dp"
             app:piv_radius="4dp"
             app:piv_select="4"
-            app:piv_selectedColor="@color/colorPrimary"
+            app:piv_selectedColor="@color/colorRed"
             app:piv_strokeWidth="1dp"
             app:piv_unselectedColor="@color/colorGrey" />
 

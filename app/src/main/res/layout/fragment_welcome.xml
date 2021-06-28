@@ -28,7 +28,6 @@
         android:text="@string/welcome"
         android:fontFamily="@font/noto_sans_display"
         android:textStyle="bold"
-        android:textColor="@color/colorRed"
         android:textSize="@dimen/text_size_24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
             android:text="@string/login"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorRed"
             android:textStyle="bold" />
     </LinearLayout>
 
