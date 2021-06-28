@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginHorizontal="@dimen/view_size_24dp"
                         android:layout_marginTop="-24dp"
-                        android:background="@color/colorTheme"
+                        android:background="@color/colorRed"
                         android:gravity="center"
                         android:paddingHorizontal="@dimen/view_size_14dp"
                         android:paddingVertical="@dimen/view_size_8dp"
@@ -134,8 +134,8 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/layout_count_days"
-                    app:tabIndicatorColor="@color/colorPrimary"
-                    app:tabSelectedTextColor="@color/colorPrimary"
+                    app:tabIndicatorColor="@color/colorRed"
+                    app:tabSelectedTextColor="@color/colorRed"
                     app:tabTextColor="@color/colorGrey">
 
                     <com.google.android.material.tabs.TabItem
@@ -358,7 +358,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="@dimen/view_size_16dp"
                                 android:background="@drawable/bg_outline_radius_red_16dp"
-                                android:backgroundTint="@color/colorTheme"
+                                android:backgroundTint="@color/colorRed"
                                 android:gravity="center"
                                 android:orientation="horizontal"
                                 android:paddingHorizontal="@dimen/view_size_12dp"

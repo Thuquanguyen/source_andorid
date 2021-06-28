@@ -70,7 +70,7 @@
                     android:layout_marginLeft="@dimen/view_size_4dp"
                     android:layout_toRightOf="@+id/tv_label"
                     android:text="Điều kiện (giảm dần)"
-                    android:textColor="@color/colorTheme" />
+                    android:textColor="@color/colorRed" />
 
             </RelativeLayout>
 
@@ -126,7 +126,7 @@
                         android:layout_marginHorizontal="@dimen/view_size_64dp"
                         android:layout_marginTop="@dimen/view_size_14dp"
                         android:background="@drawable/bg_solid_radius_4dp"
-                        android:backgroundTint="@color/colorPrimary"
+                        android:backgroundTint="@color/colorRed"
                         android:gravity="center"
                         android:text="@string/active_warranty"
                         android:textAllCaps="true"

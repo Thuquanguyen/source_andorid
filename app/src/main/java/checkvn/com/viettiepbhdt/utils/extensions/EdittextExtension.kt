@@ -6,7 +6,7 @@ import androidx.core.widget.addTextChangedListener
 import checkvn.com.viettiepbhdt.R
 
 fun EditText.changeBackgroundColor(isValid: Boolean = true) {
-    val color = if (isValid) R.color.editTextUnderLineColor else R.color.colorTheme
+    val color = if (isValid) R.color.editTextUnderLineColor else R.color.colorRed
     background.mutate().setColorFilter(resources.getColor(color), PorterDuff.Mode.SRC_ATOP)
 }
 

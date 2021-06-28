@@ -118,9 +118,9 @@ class ProductsFragment : BaseFragment() {
         }
 //        productType?.let { toolbar.setToolbarTitle(it) }
         swipe_refresh.setColorSchemeResources(
-            R.color.colorPrimary,
-            R.color.colorPrimary,
-            R.color.colorPrimary
+            R.color.colorRed,
+            R.color.colorRed,
+            R.color.colorRed
         )
     }
 

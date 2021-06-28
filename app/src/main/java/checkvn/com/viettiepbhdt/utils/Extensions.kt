@@ -46,7 +46,7 @@ fun AppCompatActivity.clearLightStatusBar() {
         flags =
             flags xor View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         window.decorView.systemUiVisibility = flags
-        window.statusBarColor = getColor(R.color.colorPrimary)
+        window.statusBarColor = getColor(R.color.colorRed)
     }
 }
 

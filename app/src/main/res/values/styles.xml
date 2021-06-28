@@ -3,7 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorRed</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:fontFamily">@font/noto_sans_display</item>
@@ -12,7 +12,7 @@
         <item name="android:textSize">@dimen/regularTextSize</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
         <item name="android:windowBackground">@color/colorWhite</item>
-        <item name="android:colorControlActivated">@color/colorPrimary</item>
+        <item name="android:colorControlActivated">@color/colorRed</item>
     </style>
 
     <style name="BottomMenuTextStyle" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu">
@@ -22,7 +22,7 @@
     </style>
 
     <style name="ProgressBarTheme" parent="ThemeOverlay.AppCompat.Light">
-        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorRed</item>
     </style>
 
 
@@ -69,7 +69,7 @@
     </style>
 
     <style name="FloatingActionButton" parent="@style/Widget.MaterialComponents.FloatingActionButton">
-        <item name="backgroundTint">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/colorRed</item>
         <item name="tint">@color/colorWhite</item>
         <item name="materialThemeOverlay">@style/FabOverlay</item>
     </style>
@@ -123,13 +123,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:indeterminate">true</item>
         <item name="android:visibility">gone</item>
-        <item name="android:indeterminateTint">@color/colorTheme</item>
+        <item name="android:indeterminateTint">@color/colorRed</item>
         <item name="android:drawablePadding">@dimen/regularPadding</item>
     </style>
 
     <style name="TextMenuItem" parent="Widget.AppCompat.TextView">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorGray</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:drawablePadding">@dimen/regularPadding</item>
@@ -138,8 +139,9 @@
     </style>
 
     <style name="EditTextNoBackground" parent="Widget.AppCompat.EditText">
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/colorGrey</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:drawablePadding">@dimen/regularPadding</item>

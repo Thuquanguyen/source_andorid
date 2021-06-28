@@ -15,7 +15,7 @@
                 <corners
                     android:bottomRightRadius="32dp"
                     android:topRightRadius="32dp" />
-                <solid android:color="@color/colorTheme" />
+                <solid android:color="@color/colorRed" />
             </shape>
         </clip>
     </item>

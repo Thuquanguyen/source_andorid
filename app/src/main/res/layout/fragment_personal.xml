@@ -212,7 +212,6 @@
                 app:is_last="true"
                 app:text_start="@string/delete_account"
                 app:underline_visible="false" />
-
             <Button
                 android:id="@+id/btnLogout"
                 style="@style/CommonButton"

@@ -54,9 +54,9 @@ class WebsiteFragment : Fragment() {
 
     private fun initUI() {
         refreshLayout.setColorSchemeResources(
-            R.color.colorPrimary,
-            R.color.colorPrimary,
-            R.color.colorPrimary
+            R.color.colorRed,
+            R.color.colorRed,
+            R.color.colorRed
         )
 
         if (url.isNullOrEmpty()) {

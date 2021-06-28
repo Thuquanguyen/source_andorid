@@ -58,7 +58,7 @@
                     android:id="@+id/fab_action"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="@color/colorTheme"
+                    android:backgroundTint="@color/colorRed"
                     android:clickable="true"
                     android:focusable="true"
                     android:src="@drawable/ic_add_white_24dp"
@@ -81,7 +81,7 @@
                     android:layout_centerHorizontal="true"
                     android:text="@string/menu"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorTheme"
+                    android:textColor="@color/colorRed"
                     android:textSize="@dimen/text_size_20sp" />
 
                 <ImageView
@@ -91,7 +91,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="@dimen/view_size_16dp"
                     android:src="@drawable/ic_close"
-                    android:tint="@color/colorTheme" />
+                    android:tint="@color/colorRed" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cv_option"
@@ -294,7 +294,7 @@
                     android:gravity="center"
                     android:text="@string/register"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorTheme"
+                    android:textColor="@color/colorRed"
                     android:textSize="@dimen/text_size_14sp"
                     android:textStyle="bold"
                     android:visibility="visible" />
@@ -308,7 +308,7 @@
                     android:layout_marginHorizontal="@dimen/view_size_16dp"
                     android:layout_marginTop="@dimen/view_size_8dp"
                     android:background="@drawable/bg_outline_radius_6dp"
-                    android:backgroundTint="@color/colorTheme"
+                    android:backgroundTint="@color/colorRed"
                     android:elevation="0dp"
                     android:gravity="center"
                     android:text="@string/sign_in"
@@ -331,7 +331,7 @@
                     android:gravity="center"
                     android:text="@string/sign_out"
                     android:textAllCaps="true"
-                    android:textColor="@color/colorTheme"
+                    android:textColor="@color/colorRed"
                     android:textSize="@dimen/text_size_14sp"
                     android:textStyle="bold"
                     android:visibility="gone" />

@@ -173,7 +173,7 @@
                     android:layout_marginVertical="@dimen/view_size_8dp"
                     android:gravity="center"
                     android:text="@string/owner_info"
-                    android:textColor="@color/colorTheme"
+                    android:textColor="@color/colorRed"
                     android:textSize="@dimen/text_size_14sp"
                     android:textStyle="bold" />
 
