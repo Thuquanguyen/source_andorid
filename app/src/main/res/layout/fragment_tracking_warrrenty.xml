@@ -9,23 +9,22 @@
     android:padding="@dimen/regularPadding"
     tools:context=".presentation.ui.splash.walkThrough.WalkThoughSecondFragment">
 
-    <ImageView
-        style="@style/CommonImageView"
-        android:src="@drawable/img_tracking_warranty" />
-
-    <TextView
-        style="@style/TextTitle"
-        android:text="@string/tracking_warranty_time" />
-
-    <TextView
-        style="@style/RegularText"
-        android:text="@string/msg_tracking_warranty_time" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical">
+        <ImageView
+            style="@style/CommonImageView"
+            android:src="@drawable/img_tracking_warranty" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:text="@string/tracking_warranty_time" />
+
+        <TextView
+            style="@style/RegularText"
+            android:text="@string/msg_tracking_warranty_time" />
 
         <com.rd.PageIndicatorView
             android:id="@+id/indicator"

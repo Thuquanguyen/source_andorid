@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,24 +9,25 @@
     android:padding="@dimen/regularPadding"
     tools:context=".presentation.ui.splash.walkThrough.WalkThoughSecondFragment">
 
-    <ImageView
-        style="@style/CommonImageView"
-        android:src="@drawable/img_extend_warranty" />
 
-    <TextView
-        style="@style/TextTitle"
-        android:text="@string/extend_warranty_time" />
-
-    <TextView
-        style="@style/RegularText"
-        android:text="@string/msg_extend_warranty_time" />
 
     <LinearLayout
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            style="@style/CommonImageView"
+            android:src="@drawable/img_extend_warranty" />
+        <TextView
+            style="@style/TextTitle"
+            android:text="@string/extend_warranty_time" />
 
+        <TextView
+            style="@style/RegularText"
+            android:text="@string/msg_extend_warranty_time" />
         <com.rd.PageIndicatorView
             android:id="@+id/indicator"
             android:layout_width="wrap_content"
@@ -51,4 +52,4 @@
             android:text="@string/turn_on_location" />
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>

@@ -8,25 +8,25 @@
     android:orientation="vertical"
     android:padding="@dimen/regularPadding"
     tools:context=".presentation.ui.splash.walkThrough.WalkThoughFifthFragment">
-
-    <ImageView
-        style="@style/CommonImageView"
-        android:src="@drawable/img_activate_warranty" />
-
-    <TextView
-        style="@style/TextTitle"
-        android:layout_margin="@dimen/extraMargin"
-        android:text="@string/activate_warranty" />
-
-    <TextView
-        style="@style/RegularText"
-        android:text="@string/msg_activate_warranty" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical">
+        <ImageView
+            android:layout_centerInParent="true"
+            style="@style/CommonImageView"
+            android:src="@drawable/img_activate_warranty" />
+
+        <TextView
+            style="@style/TextTitle"
+            android:layout_margin="@dimen/extraMargin"
+            android:text="@string/activate_warranty" />
+
+        <TextView
+            style="@style/RegularText"
+            android:text="@string/msg_activate_warranty" />
+
 
         <com.rd.PageIndicatorView
             android:id="@+id/indicator"
